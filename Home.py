@@ -119,7 +119,7 @@ df1["cuisines"] = df1.loc[:, "cuisines"].apply(lambda x: x.split(",")[0])
 
 df_download = convert_for_download(df1)
 
-image_path = "assets\\logo1.png"
+image_path = "assets/logo1.png"
 image = Image.open(image_path)
 st.sidebar.image(image, width = 120)
 st.sidebar.write("## Filtros")
