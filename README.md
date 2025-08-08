@@ -27,7 +27,7 @@ Além disso, foi solicitada a criação de um dashboard para apresentar essas in
 
 ### Como o Projeto foi Desenvolvido
 
-Para a resolução do desafio, um Cientista de Dados sênior indicou um roteiro e forneceu funções de apoio. As etapas seguidas foram:
+Para a resolução do desafio, foram realizadas as seguintes etapas:
 
 1.  **Coleta de Dados:** O conjunto de dados foi obtido do Kaggle, utilizando o arquivo `zomato.csv`.
 2.  **Preparação e Limpeza dos Dados:**
@@ -36,8 +36,8 @@ Para a resolução do desafio, um Cientista de Dados sênior indicou um roteiro 
     * As colunas foram renomeadas para um formato padronizado (snake_case) com a ajuda de uma função auxiliar.
     * A coluna de culinárias foi categorizada, mantendo apenas o primeiro tipo de culinária para cada restaurante.
     * Funções auxiliares foram usadas para preencher os nomes dos países com base nos códigos, criar categorias de preço e nomes de cores.
-3.  **Análise dos Dados:** As perguntas do CEO foram respondidas com base na análise e exploração do DataFrame tratado.
-4.  **Criação do Dashboard:** O framework **Streamlit** foi usado para construir o dashboard solicitado, garantindo que as respostas às perguntas do CEO estivessem disponíveis de forma interativa.
+3.  **Análise dos Dados:** Foram elaboradas perguntas de negócios para nortear as análises, como por exemplo: *'Qual o tipo de culinária com o maior valor médio de um prato para duas pessoas e a maior nota média?'*. Essas perguntas foram respondidas em formas de gráficos ou métricas.
+4.  **Criação do Dashboard:** O framework **Streamlit** foi usado para construir o dashboard solicitado, garantindo que as respostas às perguntas estivessem disponíveis de forma interativa.
 
 ---
 
@@ -51,8 +51,16 @@ Para a resolução do desafio, um Cientista de Dados sênior indicou um roteiro 
 * **Folium:** Para visualizações de mapas.
 * **Inflection:** Biblioteca auxiliar para padronização de nomes de colunas.
 
+### Próximo passos
+* **Reduzir o número de métricas.**
+*  **Criar novos filtros.**
+*  **Adicionar novas visões de negócio.**
+
 ---
 
 ### Resultado
 
-O projeto entregou um dashboard funcional que responde a todas as perguntas do CEO, permitindo-lhe visualizar as principais informações da empresa Fome Zero de maneira clara e eficiente. Este trabalho demonstrou habilidades de manipulação de dados, raciocínio analítico e criação de soluções de visualização, servindo como um projeto de portfólio robusto.
+Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
+O painel pode ser acessado através desse link: 
+[https://project-currycompany.streamlit.app/](https://j-atos-fome-zero.streamlit.app/)
+Este trabalho demonstrou habilidades de manipulação de dados, raciocínio analítico e criação de soluções de visualização, servindo como um projeto de portfólio robusto.
