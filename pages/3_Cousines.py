@@ -53,7 +53,7 @@ def color_name(color_code):
 
 @st.cache_data
 def rename_columns():
-    df = pd.read_parquet("datasets\\zomato.parquet")
+    df = pd.read_parquet("datasets/zomato.parquet")
     title = lambda x: inflection.titleize(x)
     snakecase = lambda x: inflection.underscore(x)
     spaces = lambda x: x.replace(" ", "")
