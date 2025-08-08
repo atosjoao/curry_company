@@ -100,7 +100,7 @@ fig1.update_yaxes(showticklabels = False)
 fig1.update_layout(title={'text':'Top 10 Cidades com mais Restaurantes na Base de Dados', 
                          'y':0.95,
                          'x':0})
-st.plotly_chart(fig1,use_container_width=True)
+st.plotly_chart(fig1,use_container_width=True,key='chart-5')
 
 with st.container():
     col1, col2 = st.columns(2)
@@ -117,7 +117,7 @@ with st.container():
         fig2.update_layout(title={'text':'Top 7 Cidades com mais Restaurantes com Avaliações >= 4', 
                                  'y':0.95,
                                  'x':0})
-        st.plotly_chart(fig2,use_container_width=True)
+        st.plotly_chart(fig2,use_container_width=True,key='chart-6')
     with col2:
         df_m4 = (df1.loc[df1['aggregate_rating'] < 4, ['city','country_code','restaurant_id']]
                   .groupby(['country_code','city']).count()
@@ -131,7 +131,7 @@ with st.container():
         fig3.update_layout(title={'text':'Top 7 Cidades com mais Restaurantes com Avaliações < 4', 
                                  'y':0.95,
                                  'x':0})
-        st.plotly_chart(fig2,use_container_width=True)
+        st.plotly_chart(fig2,use_container_width=True,key='chart-7')
 df_cuisines = (df1.loc[:, ['city','country_code','cuisines']]
           .groupby(['country_code','city']).nunique()
           .sort_values('cuisines', ascending = False).reset_index())
@@ -144,4 +144,4 @@ fig4.update_yaxes(showticklabels = False)
 fig4.update_layout(title={'text':'Top 10 Cidades com mais Restaurantes com Tipos Culinários distintos', 
                          'y':0.95,
                          'x':0})
-st.plotly_chart(fig4,use_container_width=True)
+st.plotly_chart(fig4,use_container_width=True,key='chart-8')
