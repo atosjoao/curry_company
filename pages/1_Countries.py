@@ -100,7 +100,7 @@ fig1.update_yaxes(showticklabels = False)
 fig1.update_layout(title={'text':'Restaurantes cadastrados por país', 
                          'y':0.95,
                          'x':0})
-st.plotly_chart(fig1,use_container_width=True)
+st.plotly_chart(fig1,use_container_width=True,key='chart-1')
 
 mais_cidades = (df1.loc[:, ['country_code', 'city']]
                 .groupby('country_code')
@@ -115,7 +115,7 @@ fig.update_yaxes(showticklabels = False)
 fig.update_layout(title={'text':'Cidades cadastradas por país', 
                          'y':0.95,
                          'x':0})
-st.plotly_chart(fig,use_container_width=True)
+st.plotly_chart(fig,use_container_width=True,key='chart-2')
 
 with st.container():
     col1, col2 = st.columns(2)
@@ -133,7 +133,7 @@ with st.container():
         fig_3.update_layout(title={'text':'Restaurantes com mais Avaliações', 
                          'y':0.95,
                          'x':0})
-        st.plotly_chart(fig_3,use_container_width=True)
+        st.plotly_chart(fig_3,use_container_width=True,key='chart-3')
     with col2:
         for_two = (df1.loc[:, ['country_code', 'average_cost_for_two']]
           .groupby('country_code').mean()
@@ -149,5 +149,5 @@ with st.container():
         fig_4.update_layout(title={'text':'Media de preco em um prato para dois', 
                                 'y':0.95,
                                 'x':0})
-        st.plotly_chart(fig_4,use_container_width=True)
+        st.plotly_chart(fig_4,use_container_width=True,key='chart-4')
 
