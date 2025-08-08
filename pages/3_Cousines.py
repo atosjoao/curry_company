@@ -132,7 +132,7 @@ with st.container():
             fig.update_layout(title={'text':f'Top {10} Melhores Tipos de Culinárias', 
                                      'y':0.95,
                                      'x':0})
-            st.plotly_chart(fig,use_container_width=True)
+            st.plotly_chart(fig,use_container_width=True,key='chart-9')
         with col2:
             df_fig2 = (df1.loc[:,['cuisines','aggregate_rating']].groupby(['cuisines']).mean().sort_values('aggregate_rating', ascending = True).reset_index()).head(10)
             df_fig2['aggregate_rating'] = round(df_fig2['aggregate_rating'], 2)
@@ -144,4 +144,4 @@ with st.container():
             fig2.update_layout(title={'text':f'Top {10} Piores Tipos de Culinárias', 
                                      'y':0.95,
                                      'x':0})
-            st.plotly_chart(fig2,use_container_width=True)
+            st.plotly_chart(fig2,use_container_width=True,key='chart-10')
