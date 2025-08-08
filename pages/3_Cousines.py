@@ -73,7 +73,7 @@ df1 = df1.dropna(subset=['cuisines'])
 df1["cuisines"] = df1.loc[:, "cuisines"].apply(lambda x: x.split(",")[0])
 df_cuisines = df1.copy()
 
-image_path = "assets\\logo1.png"
+image_path = "assets/logo1.png"
 image = Image.open(image_path)
 st.sidebar.image(image, width = 120)
 st.sidebar.write("## Filtros")
