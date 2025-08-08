@@ -61,6 +61,6 @@ Para a resolução do desafio, foram realizadas as seguintes etapas:
 ### Resultado
 
 Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
-O painel pode ser acessado através desse link: 
-[https://project-currycompany.streamlit.app/](https://j-atos-fome-zero.streamlit.app/)
+O painel pode ser acessado através desse link: <br>
+[https://project-currycompany.streamlit.app/](https://j-atos-fome-zero.streamlit.app/) <br>
 Este trabalho demonstrou habilidades de manipulação de dados, raciocínio analítico e criação de soluções de visualização, servindo como um projeto de portfólio robusto.
