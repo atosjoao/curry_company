@@ -37,9 +37,6 @@ A estratégia para resolver o desafio é estruturada em algumas etapas:
 
 O produto final deste projeto será um painel online, hospedado na nuvem e acessível de qualquer dispositivo conectado à internet. Este painel irá sintetizar as informações e os insights obtidos na análise de dados, oferecendo ao CEO uma ferramenta visual para acompanhar as métricas estratégicas da empresa Fome Zero.
 
-### 6. Conclusão
-
-O projeto representa um desafio de Ciência de Dados que simula uma situação real de negócios. O objetivo é aplicar os conhecimentos de análise de dados para resolver um problema de negócio, que é fornecer ao CEO da Fome Zero uma compreensão aprofundada da empresa. A conclusão do projeto é a criação de um conjunto de gráficos e tabelas que exibem as métricas de forma otimizada para a tomada de decisões estratégicas.
 ---
 ### Ferramentas Utilizadas
 
