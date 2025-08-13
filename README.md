@@ -59,4 +59,4 @@ O produto final deste projeto será um painel online, hospedado na nuvem e acess
 
 Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
 O painel pode ser acessado através desse link: <br>
-[https://project-currycompany.streamlit.app/](https://j-atos-fome-zero.streamlit.app/) <br>
+(https://j-atos-fome-zero.streamlit.app/) <br>
